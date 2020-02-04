@@ -1,0 +1,14 @@
+name: 'Robo'
+description: 'Github action with Robo task runner'
+inputs:
+  task:  # id of input
+    description: 'A Robo task'
+    required: false
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  args:
+    - ${{ inputs.task }}
+branding:
+  icon: 'tool'
+  color: 'purple'
