@@ -17,6 +17,4 @@ else
 fi
 
 robo --version
-echo ${PWD}
-ls -la
 robo $CMD_ARGS
