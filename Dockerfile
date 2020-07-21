@@ -23,6 +23,7 @@ RUN curl -L https://github.com/consolidation/Robo/releases/download/$ROBO_VERSIO
   && chmod +x /usr/local/bin/robo
 
 COPY entrypoint.sh /entrypoint.sh
+COPY php.ini /usr/local/etc/php/php.ini
 
 RUN chmod +x /entrypoint.sh
 
